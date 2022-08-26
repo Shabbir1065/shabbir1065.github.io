@@ -33,6 +33,54 @@ section{
     background: var(--main-color);
 }
 
+//------NAVIGATION BAR STUFF--------
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288);
+}
+
+.logo{
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    a{
+        font-size: 1rem;
+        padding:10px 20px;
+        color:var(--text-color);
+        font-weight: 500;
+    }
+    a:hover{
+        color:var(--hover);
+    }
+}
+
+.menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index:1001;
+    display:none;
+}
+
+#darkmode{
+    font-size: 22px;
+    cursor: pointer;
+}
+
 //------HOME SECTION STUFF--------
 .home{
     position:relative;
@@ -48,6 +96,7 @@ section{
     img{
         width: 100%;
     }
+    
 }
 
 .home-text{
