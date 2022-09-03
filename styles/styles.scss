@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+//------GENERAL STUFF------
 *{
     margin: 0;
     padding: 0;
@@ -36,6 +37,26 @@ section{
 *::selection{
     color: var(--bg-color);
     background: var(--main-color);
+}
+
+.heading{
+    font-size: var(--big-font);
+}
+
+.btn{
+    display: inline-block;
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    background: var(--hover);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 //------NAVIGATION BAR STUFF--------
@@ -198,31 +219,67 @@ header{
 }
 
 //------PORTFOLIO SECTION STUFF------
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
 
+.project{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+    color:#fff;
+    img{
+        width:100%;
+        border-radius: 10px;
+        //border:5px solid #0E2431;
+        display: block;
+    }
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--main-color));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    h3{
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    a{
+        margin-top: 15px;
+        color: var(--main-color);
+        text-decoration: none;
+        line-height: 40px;
+        background: #fff;
+        padding: 0.1rem 1.0rem;
+        border-radius: 1.0rem;
+        text-align: center;
+    }
+}
+
+.project:hover .layer{
+    height:100%;
+}
 
 //------CONTACT ME STUFF------
 
 
-//------GENERAL STUFF------
-.heading{
-    font-size: var(--big-font);
-}
 
-.btn{
-    display: inline-block;
-    background: var(--main-color);
-    color: #fff;
-    padding: 0.7rem 1.3rem;
-    border-radius: 0.5rem;
-}
-
-.btn:hover{
-    background: var(--hover);
-}
-
-html{
-    scroll-behavior: smooth;
-}
 
 
 //------Responsive to different devices------
