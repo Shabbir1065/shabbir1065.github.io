@@ -11,6 +11,7 @@
 :root {
   --main-color:#4070F4;
   --bg-color:#fff;
+  --bg-color-footer:rgb(198, 198, 198);
   --text-color:#0E2431;
   --hover: hsl(260, 100%, 51%);
   --big-font: 3.2rem;
@@ -26,6 +27,7 @@ body {
 body.active {
   --text-color: #fff;
   --bg-color: #0E2431;
+  --bg-color-footer:#0b1b25;
 }
 
 section {
@@ -60,6 +62,7 @@ section {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 50px;
 }
 
 header {
@@ -110,6 +113,7 @@ header {
 }
 
 .home {
+  padding: 50px 10%;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -249,7 +253,7 @@ header {
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: var(--p-font);
   transition: height 0.5s;
 }
 .layer h3 {
@@ -269,6 +273,15 @@ header {
 
 .project:hover .layer {
   height: 100%;
+}
+
+footer {
+  width: 100%;
+  color: var(--text-color);
+  text-align: center;
+  padding: 25px 0;
+  background: var(--bg-color-footer);
+  font-weight: 300;
 }
 
 @media (max-width: 991px) {
