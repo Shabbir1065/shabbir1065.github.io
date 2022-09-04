@@ -15,7 +15,6 @@
     <header>
         <a href="#" class="logo">Shabbir</a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
         <nav>
             <ul class="navbar">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
@@ -26,6 +25,7 @@
                 <i class="fa-solid fa-moon" id="darkmode"></i>
             </ul>
         </nav>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
     </header>
 
@@ -112,7 +112,7 @@
             <div class="project">
                 <img src="img/Screen Shot 2022-09-03 at 1.16.18 PM.png" alt="">
                 <div class="layer">
-                    <h3>Underwatch (Text-based game)</h3>
+                    <h3>Underwatch</h3>
                     <p>A text-based game built using Java to practice OOP concepts such as hierarchies and polymorphism.</p>
                     <a href="https://github.com/Shabbir1065/hierarchiesProject"><i class="fa-brands fa-square-github"></i> Source Code</a>
                 </div>
@@ -131,11 +131,29 @@
 
     <!-- -----Contact Me Section-------- -->
     <section class="contact" id="contact">
-        <h1 class="heading">Contact Me</h1>
         
+        <div class="row row-responsive">
+            <div class="contact-left">
+                <h1 class="heading">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shabbir1065@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1 416-485-7776</p>
+                <p><i class="fa-solid fa-location-pin"></i>Toronto, Canada</p>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/02e65ec1108638e8a00c0b3b772ce1bd" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message"  rows="10" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
         
 
     </section>
+
+    <!-- ----Footer----- -->
     <footer>
         <p>Copyright © Shabbir Abedi. Made by Shabbir Abedi. All rights reserved.</p>
     </footer>
