@@ -1,4 +1,4 @@
 # myPortfolio
 A website I built to display my side projects and experiences.
 
-Check out shabbir.github.io online to view the project yourself!
+Click [here](shabbir.github.io) to check out my project online and view it yourself!
